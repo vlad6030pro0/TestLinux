@@ -1,9 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Threading;
 
-using System.Threading;
-
-while(true)
+internal class Program
 {
-	Console.WriteLine("Hello, World!");
-	Thread.Sleep(1000);
+    private static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.WriteLine("Hello from server!");
+            Thread.Sleep(1000);
+        }
+    }
 }
